@@ -68,3 +68,7 @@ ros2 launch ros2_stm32_bridge driver.launch.py
 ```bash
 rviz2
 ```
+
+```bash
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
