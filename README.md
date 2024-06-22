@@ -106,3 +106,22 @@ rviz2
 ```
 
 ![1719026964061](images/README/1719026964061.png)
+
+---
+
+## 7. slam gmapping建圖
+
+#### 機器人端
+
+```
+ros2 launch wanderbot_integrate wanderbot_integration.launch.py
+```
+
+#### 本地端
+
+````
+rviz2
+```
+````
+
+![1719099937220](images/README/1719099937220.png)
