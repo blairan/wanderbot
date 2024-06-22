@@ -11,7 +11,7 @@
     model_param_acw: 0.45
     model_param_cw: 0.45
     odom_frame: odom
-    port_name: /dev/ros2_stm32_driver
+    port_name: /dev/mycar
     qos_overrides:
       /parameter_events:
         publisher:

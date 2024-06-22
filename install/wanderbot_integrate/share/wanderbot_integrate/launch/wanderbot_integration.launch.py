@@ -13,6 +13,12 @@ def generate_launch_description():
     ros2_stm32_bridge_path = os.path.expanduser('src/wanderbot_integrate/ros2_stm32_bridge')
     ros2_stm32_bridge_file = os.path.join(ros2_stm32_bridge_path, 'launch', 'driver.launch.py')
 
+    #激光雷達驅動包路徑
+    laser_path = os.path.expanduser("src/wanderbot_integrate/LSLIDAR_X_ROS2/lslidar_driver")
+    laser_file = os.path.join(laser_path, "launch", "lsn10_launch.py")
+    
+    #---------------------------------
+
     #wanderbot模型啟動
     wanderbot_action = IncludeLaunchDescription(PythonLaunchDescriptionSource([
         robot_model_file]))
@@ -29,9 +35,15 @@ def generate_launch_description():
         arguments= ["--ros-args", "--params-file", "src/wanderbot_integrate/camera_config/usb_cam.yaml"]
     )
 
+    #激光雷達啟動
+    laser_action = IncludeLaunchDescription(PythonLaunchDescriptionSource([
+        laser_file
+    ]))
+
 
     return LaunchDescription([
         wanderbot_action,
+        camera_action,
+        laser_action,
         ros2_stm32_bridge,
-        camera_action
     ])
