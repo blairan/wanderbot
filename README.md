@@ -104,3 +104,5 @@ ros2 launch wanderbot_integrate wanderbot_integration.launch.py
 ```
 rviz2
 ```
+
+![1719026964061](images/README/1719026964061.png)
