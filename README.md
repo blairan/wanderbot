@@ -4,7 +4,7 @@
 
 2024/06/15
 
-### 1.底盤測試
+## 1.底盤測試
 
 #### 機器人端
 
@@ -20,7 +20,7 @@ rviz2
 
 ---
 
-### 2. 機器人 URDF 顯示於 RViz2
+## 2. 機器人 URDF 顯示於 RViz2
 
 #### 機器人端
 
@@ -39,7 +39,7 @@ rviz2
 
 ---
 
-### 3. 相機測試
+## 3. 相機測試
 
 #### 機器人端
 
@@ -55,7 +55,7 @@ rviz2
 
 ---
 
-### 4.底盤測試
+## 4.底盤測試
 
 #### 機器人端
 
@@ -71,4 +71,36 @@ rviz2
 
 ```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+
+---
+
+### 5. Ｎ10激光雷達
+
+#### **機器人端**
+
+```
+ros2 launch lslidar_driver lsn10_launch.py
+```
+
+#### 本機端
+
+````
+rviz2
+````
+
+---
+
+## 6. 整合（相機/雷達/底盤）
+
+#### 機器人端
+
+```
+ros2 launch wanderbot_integrate wanderbot_integration.launch.py
+```
+
+#### 本機端
+
+```
+rviz2
 ```
