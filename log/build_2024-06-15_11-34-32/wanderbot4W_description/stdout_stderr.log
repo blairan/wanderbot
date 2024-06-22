@@ -1,0 +1,49 @@
+running egg_info
+creating ../../build/wanderbot4W_description/wanderbot4W_description.egg-info
+writing ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/dependency_links.txt
+writing entry points to ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/entry_points.txt
+writing requirements to ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/requires.txt
+writing top-level names to ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/top_level.txt
+writing manifest file '../../build/wanderbot4W_description/wanderbot4W_description.egg-info/SOURCES.txt'
+reading manifest file '../../build/wanderbot4W_description/wanderbot4W_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/wanderbot4W_description/wanderbot4W_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ctk/wanderbot/build/wanderbot4W_description/build
+creating /home/ctk/wanderbot/build/wanderbot4W_description/build/lib
+creating /home/ctk/wanderbot/build/wanderbot4W_description/build/lib/wanderbot4W_description
+copying wanderbot4W_description/__init__.py -> /home/ctk/wanderbot/build/wanderbot4W_description/build/lib/wanderbot4W_description
+running install
+running install_lib
+creating /home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages/wanderbot4W_description
+copying /home/ctk/wanderbot/build/wanderbot4W_description/build/lib/wanderbot4W_description/__init__.py -> /home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages/wanderbot4W_description
+byte-compiling /home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages/wanderbot4W_description/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ctk/wanderbot/install/wanderbot4W_description/share/ament_index
+creating /home/ctk/wanderbot/install/wanderbot4W_description/share/ament_index/resource_index
+creating /home/ctk/wanderbot/install/wanderbot4W_description/share/ament_index/resource_index/packages
+copying resource/wanderbot4W_description -> /home/ctk/wanderbot/install/wanderbot4W_description/share/ament_index/resource_index/packages
+copying package.xml -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description
+creating /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+copying urdf/stm32_2w.urdf -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+copying urdf/stm32_4w_.urdf -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+copying urdf/arduino.urdf -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+copying urdf/stm32_4w.urdf -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+creating /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/launch
+copying launch/wanderbot.launch.py -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/launch
+copying launch/wanderbot_gazebo.launch.py -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/launch
+creating /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh
+creating /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+copying mesh/diff_4w/laser_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+copying mesh/diff_4w/right_former_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+copying mesh/diff_4w/camera_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+copying mesh/diff_4w/right_rear_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+copying mesh/diff_4w/base_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+copying mesh/diff_4w/left_former_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+copying mesh/diff_4w/left_rear_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+copying mesh/diff_4w/bracket_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+running install_egg_info
+Copying ../../build/wanderbot4W_description/wanderbot4W_description.egg-info to /home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages/wanderbot4W_description-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/ctk/wanderbot/build/wanderbot4W_description/install.log'

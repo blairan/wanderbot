@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+  name="wanderbot4W_description" xmlns:xacro="http://ros.org/wiki/xacro">
+  <link name="base_footprint">
+    <visual>
+      <geometry>
+          <sphere radius="0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0046066 0.00020213 0.032597"
+        rpy="0 0 0" />
+      <mass
+        value="1.0079" />
+      <inertia
+        ixx="0.0022232"
+        ixy="-5.4197E-06"
+        ixz="1.9875E-09"
+        iyy="0.0060514"
+        iyz="-9.5219E-07"
+        izz="0.0081338" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1 0.1 0.1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="baselink2basefootprint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0.0 0.0 0.03"/>
+  </joint>
+  <!-- 添加三楼 -->
+  <link
+    name="bracket_link">
+    <inertial>
+      <origin
+        xyz="-0.0042701 1.2621E-05 -0.095635"
+        rpy="0 0 0" />
+      <mass
+        value="0.71039" />
+      <inertia
+        ixx="0.0045868"
+        ixy="9.8566E-07"
+        ixz="8.5969E-20"
+        iyy="0.0065441"
+        iyz="-8.9654E-15"
+        izz="0.0044039" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/bracket_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1 0.1 0.1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/bracket_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="brachet2baselink" type="fixed">
+    <parent link="base_link"/>
+    <child link="bracket_link"/>
+    <origin xyz="0.0 0.0 0.37"/>
+  </joint>
+  <link
+    name="laser">
+    <inertial>
+      <origin
+        xyz="0.0077192 0.00012032 -0.010702"
+        rpy="0 0 0" />
+      <mass
+        value="0.16249" />
+      <inertia
+        ixx="7.2364E-05"
+        ixy="2.8411E-07"
+        ixz="1.5727E-05"
+        iyy="0.0001121"
+        iyz="-4.0098E-07"
+        izz="0.00013004" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/laser_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="laser_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0 -0.0 0.05116"
+      rpy="0 0 0" />
+    <parent
+      link="bracket_link" />
+    <child
+      link="laser" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera">
+    <inertial>
+      <origin
+        xyz="-0.020313 2.6086E-05 -1.2986E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.018279" />
+      <inertia
+        ixx="3.2476E-06"
+        ixy="-2.1188E-09"
+        ixz="1.3504E-13"
+        iyy="2.4033E-06"
+        iyz="-2.3775E-13"
+        izz="2.3911E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.18522 -0.00046229 0.0293"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_former_link">
+    <inertial>
+      <origin
+        xyz="-1.5266E-16 -0.0071412 1.1102E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.10264" />
+      <inertia
+        ixx="7.0079E-05"
+        ixy="6.4133E-20"
+        ixz="2.2674E-19"
+        iyy="0.00012111"
+        iyz="-6.165E-20"
+        izz="7.0079E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/left_former_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.59216 0.61961 0.73333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/left_former_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_former_joint"
+    type="continuous">
+    <origin
+      xyz="0.10837 0.11101 0.017306"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_former_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="left_rear_link">
+    <inertial>
+      <origin
+        xyz="-8.3267E-17 -0.0071412 1.1102E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.10264" />
+      <inertia
+        ixx="7.0079E-05"
+        ixy="6.4582E-20"
+        ixz="2.2701E-19"
+        iyy="0.00012111"
+        iyz="-6.1351E-20"
+        izz="7.0079E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/left_rear_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/left_rear_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rear_joint"
+    type="continuous">
+    <origin
+      xyz="-0.11163 0.11101 0.017306"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_rear_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_former_link">
+    <inertial>
+      <origin
+        xyz="4.1633E-17 0.0071412 2.7756E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.10264" />
+      <inertia
+        ixx="7.0079E-05"
+        ixy="3.1736E-20"
+        ixz="-1.4488E-19"
+        iyy="0.00012111"
+        iyz="5.3239E-20"
+        izz="7.0079E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/right_former_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/right_former_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_former_joint"
+    type="continuous">
+    <origin
+      xyz="0.10837 -0.11099 0.017306"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_former_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_rear_link">
+    <inertial>
+      <origin
+        xyz="5.5511E-17 0.0071412 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.10264" />
+      <inertia
+        ixx="7.0079E-05"
+        ixy="4.569E-20"
+        ixz="-1.421E-19"
+        iyy="0.00012111"
+        iyz="6.4334E-20"
+        izz="7.0079E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/right_rear_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wanderbot4W_description/mesh/diff_4w/right_rear_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rear_joint"
+    type="continuous">
+    <origin
+      xyz="-0.11163 -0.11099 0.017306"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_rear_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+  <gazebo reference="left_front_wheel_link">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+
+  <gazebo reference="right_front_wheel_link">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+
+  <gazebo reference="left_rear_wheel_link">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+
+  <gazebo reference="right_rear_wheel_link">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+
+
+  <!-- Gazebo plugin for differential drive -->
+  <gazebo>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+      <ros>
+        <namespace>/wanderbot4W</namespace>
+        <argument>cmd_vel:=cmd_vel</argument>
+        <argument>odom:=odom</argument>
+      </ros>
+      <left_front_joint>left_front_joint</left_front_joint>  <!-- 左前轮接头名 -->
+      <right_front_joint>right_front_joint</right_front_joint>  <!-- 右前轮接头名 -->
+      <left_rear_joint>left_rear_joint</left_rear_joint>  <!--左后轮接头名 -->
+      <right_rear_joint>right_rear_joint</right_rear_joint>  <!--右后轮接头名 -->
+      <wheel_separation>0.2</wheel_separation>  <!-- 左右轮中心之间的距离 -->
+      <wheel_base>0.22</wheel_base>  <!-- 前后轮中心之间的距离 -->
+      <wheel_diameter>0.07</wheel_diameter>  <!-- 轮子直径 -->
+      <publish_odom>true</publish_odom>  <!-- 发布里程信息 -->
+      <publish_wheel_tf>false</publish_wheel_tf>  <!-- 发布轮与基座之间的变换 -->
+      <publish_wheel_joint_state>true</publish_wheel_joint_state>  <!-- 发布轮关节状态 -->
+      <ros_control>true</ros_control>  <!-- 启用ros_control -->
+    </plugin>
+  </gazebo>
+
+
+</robot>

@@ -1,0 +1,51 @@
+[0.484s] Invoking command in '/home/ctk/wanderbot/src/wanderbot4W_description': PYTHONPATH=/home/ctk/wanderbot/build/wanderbot4W_description/prefix_override:/home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/wanderbot4W_description build --build-base /home/ctk/wanderbot/build/wanderbot4W_description/build install --record /home/ctk/wanderbot/build/wanderbot4W_description/install.log --single-version-externally-managed install_data
+[0.634s] running egg_info
+[0.634s] creating ../../build/wanderbot4W_description/wanderbot4W_description.egg-info
+[0.634s] writing ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/PKG-INFO
+[0.635s] writing dependency_links to ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/dependency_links.txt
+[0.635s] writing entry points to ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/entry_points.txt
+[0.635s] writing requirements to ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/requires.txt
+[0.635s] writing top-level names to ../../build/wanderbot4W_description/wanderbot4W_description.egg-info/top_level.txt
+[0.635s] writing manifest file '../../build/wanderbot4W_description/wanderbot4W_description.egg-info/SOURCES.txt'
+[0.636s] reading manifest file '../../build/wanderbot4W_description/wanderbot4W_description.egg-info/SOURCES.txt'
+[0.636s] writing manifest file '../../build/wanderbot4W_description/wanderbot4W_description.egg-info/SOURCES.txt'
+[0.636s] running build
+[0.636s] running build_py
+[0.637s] creating /home/ctk/wanderbot/build/wanderbot4W_description/build
+[0.637s] creating /home/ctk/wanderbot/build/wanderbot4W_description/build/lib
+[0.637s] creating /home/ctk/wanderbot/build/wanderbot4W_description/build/lib/wanderbot4W_description
+[0.637s] copying wanderbot4W_description/__init__.py -> /home/ctk/wanderbot/build/wanderbot4W_description/build/lib/wanderbot4W_description
+[0.637s] running install
+[0.637s] running install_lib
+[0.637s] creating /home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages/wanderbot4W_description
+[0.637s] copying /home/ctk/wanderbot/build/wanderbot4W_description/build/lib/wanderbot4W_description/__init__.py -> /home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages/wanderbot4W_description
+[0.638s] byte-compiling /home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages/wanderbot4W_description/__init__.py to __init__.cpython-310.pyc
+[0.638s] running install_data
+[0.638s] creating /home/ctk/wanderbot/install/wanderbot4W_description/share/ament_index
+[0.638s] creating /home/ctk/wanderbot/install/wanderbot4W_description/share/ament_index/resource_index
+[0.638s] creating /home/ctk/wanderbot/install/wanderbot4W_description/share/ament_index/resource_index/packages
+[0.638s] copying resource/wanderbot4W_description -> /home/ctk/wanderbot/install/wanderbot4W_description/share/ament_index/resource_index/packages
+[0.638s] copying package.xml -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description
+[0.638s] creating /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+[0.638s] copying urdf/stm32_2w.urdf -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+[0.639s] copying urdf/stm32_4w_.urdf -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+[0.639s] copying urdf/arduino.urdf -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+[0.639s] copying urdf/stm32_4w.urdf -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/urdf
+[0.639s] creating /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/launch
+[0.639s] copying launch/wanderbot.launch.py -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/launch
+[0.639s] copying launch/wanderbot_gazebo.launch.py -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/launch
+[0.639s] creating /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh
+[0.639s] creating /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+[0.639s] copying mesh/diff_4w/laser_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+[0.639s] copying mesh/diff_4w/right_former_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+[0.639s] copying mesh/diff_4w/camera_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+[0.639s] copying mesh/diff_4w/right_rear_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+[0.639s] copying mesh/diff_4w/base_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+[0.642s] copying mesh/diff_4w/left_former_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+[0.643s] copying mesh/diff_4w/left_rear_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+[0.643s] copying mesh/diff_4w/bracket_link.STL -> /home/ctk/wanderbot/install/wanderbot4W_description/share/wanderbot4W_description/mesh/diff_4w
+[0.643s] running install_egg_info
+[0.645s] Copying ../../build/wanderbot4W_description/wanderbot4W_description.egg-info to /home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages/wanderbot4W_description-0.0.0-py3.10.egg-info
+[0.646s] running install_scripts
+[0.659s] writing list of installed files to '/home/ctk/wanderbot/build/wanderbot4W_description/install.log'
+[0.677s] Invoked command in '/home/ctk/wanderbot/src/wanderbot4W_description' returned '0': PYTHONPATH=/home/ctk/wanderbot/build/wanderbot4W_description/prefix_override:/home/ctk/wanderbot/install/wanderbot4W_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/wanderbot4W_description build --build-base /home/ctk/wanderbot/build/wanderbot4W_description/build install --record /home/ctk/wanderbot/build/wanderbot4W_description/install.log --single-version-externally-managed install_data

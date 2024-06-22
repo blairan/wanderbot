@@ -1,0 +1,24 @@
+[0.830s] Invoking command in '/home/ctk/wanderbot/src/control_simulate': PYTHONPATH=/home/ctk/wanderbot/build/control_simulate/prefix_override:/home/ctk/wanderbot/install/control_simulate/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/control_simulate build --build-base /home/ctk/wanderbot/build/control_simulate/build install --record /home/ctk/wanderbot/build/control_simulate/install.log --single-version-externally-managed install_data
+[1.008s] running egg_info
+[1.008s] writing ../../build/control_simulate/control_simulate.egg-info/PKG-INFO
+[1.009s] writing dependency_links to ../../build/control_simulate/control_simulate.egg-info/dependency_links.txt
+[1.009s] writing entry points to ../../build/control_simulate/control_simulate.egg-info/entry_points.txt
+[1.009s] writing requirements to ../../build/control_simulate/control_simulate.egg-info/requires.txt
+[1.009s] writing top-level names to ../../build/control_simulate/control_simulate.egg-info/top_level.txt
+[1.011s] reading manifest file '../../build/control_simulate/control_simulate.egg-info/SOURCES.txt'
+[1.012s] writing manifest file '../../build/control_simulate/control_simulate.egg-info/SOURCES.txt'
+[1.012s] running build
+[1.012s] running build_py
+[1.012s] copying control_simulate/control_sim.py -> /home/ctk/wanderbot/build/control_simulate/build/lib/control_simulate
+[1.013s] running install
+[1.014s] running install_lib
+[1.017s] copying /home/ctk/wanderbot/build/control_simulate/build/lib/control_simulate/control_sim.py -> /home/ctk/wanderbot/install/control_simulate/lib/python3.10/site-packages/control_simulate
+[1.018s] byte-compiling /home/ctk/wanderbot/install/control_simulate/lib/python3.10/site-packages/control_simulate/control_sim.py to control_sim.cpython-310.pyc
+[1.020s] running install_data
+[1.020s] running install_egg_info
+[1.024s] removing '/home/ctk/wanderbot/install/control_simulate/lib/python3.10/site-packages/control_simulate-0.0.0-py3.10.egg-info' (and everything under it)
+[1.024s] Copying ../../build/control_simulate/control_simulate.egg-info to /home/ctk/wanderbot/install/control_simulate/lib/python3.10/site-packages/control_simulate-0.0.0-py3.10.egg-info
+[1.025s] running install_scripts
+[1.041s] Installing control_sim script to /home/ctk/wanderbot/install/control_simulate/lib/control_simulate
+[1.041s] writing list of installed files to '/home/ctk/wanderbot/build/control_simulate/install.log'
+[1.068s] Invoked command in '/home/ctk/wanderbot/src/control_simulate' returned '0': PYTHONPATH=/home/ctk/wanderbot/build/control_simulate/prefix_override:/home/ctk/wanderbot/install/control_simulate/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/control_simulate build --build-base /home/ctk/wanderbot/build/control_simulate/build install --record /home/ctk/wanderbot/build/control_simulate/install.log --single-version-externally-managed install_data
