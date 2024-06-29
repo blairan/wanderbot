@@ -168,4 +168,28 @@ rviz2
 ros2 run control_simulate control_sim
 ```
 
+### 儲存地圖
+
+```
+ros2 run nav2_map_server map_saver_cli -f src/maps/my_room
+```
+
 ![1719632030769](images/README/1719632030769.png)
+
+## 9. 導航
+
+#### 機器人端
+
+```
+ros2 launch wanderbot_integrate wanderbot_integration.launch.py
+```
+
+```
+ros2 launch wanderbot_integrate wanderbot_integration.launch.py
+```
+
+#### 本地端
+
+```
+rviz2
+```
