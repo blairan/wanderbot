@@ -128,7 +128,8 @@ rviz2
 ````
 
 ```
-ros2 run teleop_twist_keyboard teleop_twist_keyboard
+ros2 run control_simulate control_sim
+
 ```
 
 或者
@@ -144,3 +145,27 @@ ros2 run control_simulate control_sim
 ```
 ros2 run nav2_map_server map_saver_cli -f src/maps/my_room
 ```
+
+## 8. Catographer建圖
+
+#### 機器人端
+
+```
+ros2 launch wanderbot_integrate wanderbot_integration.launch.py
+```
+
+```
+ros2 launch wanderbot_cartographer cartographer.launch.py
+```
+
+### 本機端
+
+```
+rviz2
+```
+
+```
+ros2 run control_simulate control_sim
+```
+
+![1719632030769](images/README/1719632030769.png)
