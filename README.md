@@ -185,7 +185,7 @@ ros2 launch wanderbot_integrate wanderbot_integration.launch.py
 ```
 
 ```
-ros2 launch wanderbot_integrate wanderbot_integration.launch.py
+ros2 launch wanderbot_nav2 nav2_bringup.launch.py
 ```
 
 #### 本地端
