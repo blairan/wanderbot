@@ -193,3 +193,4 @@ ros2 launch wanderbot_nav2 nav2_bringup.launch.py
 ```
 rviz2
 ```
+![1719632434759](images/README/1719632434759.png)
